@@ -120,3 +120,45 @@ h1, h2, h3, h4, h5, h6 {
 .productos article:nth-child(3){
   background-image: url('../media/p3.jpg')
 }
+
+.productos .info-productos{
+  margin: 0 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.productos .info-productos::before{
+content:"";
+height: 50px;
+width: 5px;
+display: inline-block;
+background-color: orange;
+position: absolute;
+top: 50%;
+margin: -20px;
+
+
+}
+.info-productos .description{
+  display: block;
+}
+
+.productos .model{
+  font-size: 55px;
+}
+.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next{
+  top: 90%;
+}
+
+.fp-controlArrow.fp-prev{
+  left: 20%;
+  border-width: 20px 20px 20px 0px;
+  border-color: transparent rgb(255, 211, 113) transparent transparent;
+}
+.fp-controlArrow.fp-next{
+  right: 20%;
+  border-width: 20px 0px 20px 20px;
+  border-color: transparent transparent transparent rgb(255, 211, 113);
+}
